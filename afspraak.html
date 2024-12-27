@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body>
+        <h1>Welkom bij Tandartspraktijk KiesKeurig</h1>
+        <p>
+            Onze praktijk biedt hoogwaardige tandheelkundige zorg op een voor de cliënt optimale wijze, <br>
+            uitgevoerd door een professioneel, gemotiveerd team. <br>
+            Onze moderne praktijk geeft invulling aan een breed scala van tandheelkundige zorg. <br>
+            Van algemene tandheelkunde tot en met implantologie, mondhygiëne, esthetische tandheelkunde <br>
+            en uitgebreide restauratieve tandheelkunde. <br>
+            Alle zorg in één huis en altijd onder supervisie van uw eigen tandarts.<br>
+        </p>
+        
+        <p>
+            <img src="tandarts/praktijkruimte.jpg" alt="" title="praktijk ruimte" width="300" height="250">
+            <img src="tandarts/kronen-en-bruggen.png" alt="" width="300" height="250">
+            <img src="tandarts/tandarts.jpg" alt="" title="behandelingen" width="300" height="250">
+            
+        </p>
+        
+
+        <form action="https://formspree.io/f/mvgoeyaj" method="post">
+            <fieldset>
+                <legend><b>Persoonlijke Gegevens</b></legend>
+
+                <label for="v_naam">
+                    <b>Voornaam </b></label>
+                <input type="text" id="v_naam" name="v_naam">
+                <br><br>
+
+                <label for="a_naam">
+                    <b>Achternaam</b>
+                </label>
+                <input type="text" id="a_naam" name="a_naam">
+                <br><br>
+
+                <label for="geb_datum">
+                    <b>Geboorte datum</b>
+                </label>
+                <input type="date" id="geb_datum" name="geb_datum" max="2050-12-31">
+                <br><br>
+
+                <label for="email">
+                    <b>E-mail adres</b>
+                </label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="telf_nr">
+                    <b>Telefoon nummer</b>
+                </label>
+                <input type="tel" id="telf_nr" name="telf_nr">
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Aandoeningen</b></legend>
+                <input type="checkbox" name="klachten" value="kiespijn">Kiespijn 
+                <input type="checkbox" name="klachten" value="kaakgewricht">Kaakgewrichtsproblemen<br>
+                <input type="checkbox" name="klachten" value="gaatjes">Gaatjes 
+                <input type="checkbox" name="klachten" value="slijtage">Gebitsslijtage <br>
+                <input type="checkbox" name="klachten" value="letsel">Tandletsel
+                <input type="checkbox" name="klachten" value="parodontitis">Parodontitis
+                <br><br>
+
+                <label for="foto"><b>Afbeelding </b></label>
+                <input type="file" id="foto" name="Foto">
+                <br><br>
+
+                <label for="beschrijving"><b>Beschrijvingen</b></label>
+                <br>
+                <textarea name="beschrijving" maxlength="1500"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Datum</b> </legend>
+                <input type="date" name="datum" max="2050-12-31">
+            </fieldset>
+
+            <br>
+            <button type="submit" name="verzendknop">Verzend</button>
+            <br>
+        </form>
+    </body>
+</html>
